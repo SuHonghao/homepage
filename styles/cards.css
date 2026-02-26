@@ -1,0 +1,33 @@
+/* cards.css */
+/* 卡片的通用样式，负责卡片的基本外观 */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 卡片内部通用的内容 */
+.card .pad {
+  flex-grow: 1;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.card .when {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 8px;
+}

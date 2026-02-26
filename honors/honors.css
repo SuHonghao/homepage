@@ -1,0 +1,24 @@
+/* honors.css */
+#honors .section { margin-bottom: 40px; }
+#honors .section h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent);
+  padding-bottom: 8px;
+  text-align: left;
+  margin-bottom: 28px;
+}
+
+#honors .grid { display: grid; gap: 16px; }
+#honors .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 640px) { #honors .grid-2 { grid-template-columns: 1fr; } }
+
+#honors .card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+}
+#honors .card .pad { padding: 20px; }
+#honors .card h3 { font-size: 1.4rem; margin-bottom: 10px; }
+#honors .card .when { color: var(--muted); }

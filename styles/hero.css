@@ -1,0 +1,95 @@
+/* Hero section */
+.hero {
+  background: linear-gradient(180deg, #f7f9ff, transparent 60%);
+  border-bottom: none;
+}
+
+/* 主容器与模块布局 */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px; /* 增加左右内边距，避免内容与页面边缘紧贴 */
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 160px 1fr; /* 注意你头像宽度是160px，可以对应调整 */
+  gap: 40px; /* 原来24px，改大成40px，就会增加头像和文字的距离 */
+  padding: 32px 24px 28px;
+}
+
+
+
+/* Hero section */
+.avatar {
+  width: 160px; /* 增加头像的宽度 */
+  height: 160px; /* 增加头像的高度 */
+  border-radius: 50%; /* 保证外框为圆形 */
+  object-fit: cover; /* 确保图片自适应容器大小 */
+  border: 4px solid #fff; /* 保持白色边框 */
+  box-shadow: var(--shadow); /* 阴影效果 */
+  background: #ddd; /* 背景颜色 */
+
+}
+
+
+
+.hero-meta h1 {
+  margin-bottom: 6px;
+  font-size: 1.8rem;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.subtitle {
+  margin-bottom: 8px;
+  color: var(--muted);
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  list-style: none;
+  margin: 10px 0 14px;
+  color: var(--muted);
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* 修改 .chip 类样式，去除外边框 */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--card); /* 背景色 */
+  padding: 10px 14px; /* 增加内边距 */
+  border-radius: 999px; /* 圆形外框 */
+  box-shadow: var(--shadow); /* 阴影效果 */
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+/* 鼠标悬停时的变化 */
+.chip:hover {
+  background: var(--accent-weak);
+  color: var(--accent);
+}
+
+
+/* 将“最近更新”改为斜体并设置透明度 */
+.updated {
+  margin-top: 20px; /* 增加与联系方式的间距 */
+  font-style: italic; /* 斜体 */
+  opacity: 0.7; /* 设置透明度 */
+  color: var(--muted); /* 使颜色保持柔和 */
+}
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>苏鸿皓 · 个人主页</title>
+  <meta name="description" content="苏鸿皓个人主页，由动态模块组成，每个模块内容来自对应 Excel 文件自动生成的 HTML。" />
+
+  <!-- 引入全局样式 -->
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/topbar.css" />
+  <link rel="stylesheet" href="styles/hero.css" />
+  <link rel="stylesheet" href="styles/cards.css" />
+  <link rel="stylesheet" href="styles/images.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
+
+  <!-- 引入各模块的样式 -->
+  <link rel="stylesheet" href="student/student.css" />
+  <link rel="stylesheet" href="projects/projects.css" />
+  <link rel="stylesheet" href="awards/awards.css" />
+  <link rel="stylesheet" href="others/others.css" />
+  <link rel="stylesheet" href="education/education.css" />
+  <link rel="stylesheet" href="practice/practice.css" />
+  <link rel="stylesheet" href="honors/honors.css" />
+</head>
+
+<body>
+  <!-- 顶部导航 -->
+  <nav class="topbar" aria-label="主导航">
+    <div class="container">
+      <a class="brand" href="#top">苏鸿皓</a>
+      <ul class="nav">
+        <!-- 导航链接将在页面加载后由脚本插入 -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 头图/名片 -->
+  <header id="top" class="hero">
+    <div class="container hero-inner">
+      <img class="avatar" src="images/profile.jpg" alt="苏鸿皓" />
+      <div class="hero-meta">
+        <h1>苏鸿皓 <span class="muted">(Honghao&nbsp;Su)</span></h1>
+        <p class="subtitle">深圳大学 2024级本科生 · 人工智能（腾班）</p>
+        <ul class="facts">
+          <li>男</li>
+          <li>年龄：19</li>
+          <li>民族：汉族</li>
+          <li>政治面貌：共青团员</li>
+          <li>现居：广东深圳</li>
+        </ul>
+        <div class="contacts">
+          <span class="chip">📞&nbsp;+86&nbsp;152‑1240‑0999</span>
+          <span class="chip">✉️&nbsp;honghaosu2006@gmail.com</span>
+          <span class="chip">微信：Suuhh_319</span>
+        </div>
+        <p class="updated">最近更新：2025.11</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主体区域：动态加载各模块 -->
+  <main class="container" id="modules-wrapper">
+    <!-- 各模块的 HTML 将在页面加载时由脚本插入到对应的容器中 -->
+  </main>
+
+  <!-- 访问次数统计 -->
+  <aside class="visit-counter">
+    总访问量：<span id="visit-count">0</span>
+  </aside>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container small">
+      <p>© 2025 苏鸿皓</p>
+      <a class="totop" href="#top" aria-label="返回顶部">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

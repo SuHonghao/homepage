@@ -1,0 +1,26 @@
+/* 响应式处理 */
+@media (max-width: 900px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .avatar {
+    justify-self: start;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-2, .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    display: none; /* 在窄屏幕上隐藏顶部导航的链接，以节省空间 */
+  }
+}

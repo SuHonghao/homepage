@@ -1,0 +1,29 @@
+/* practice.css */
+#practice .section { margin-bottom: 40px; }
+#practice .section h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent);
+  padding-bottom: 8px;
+  text-align: left;
+  margin-bottom: 28px;
+}
+
+#practice .grid { display: grid; gap: 16px; }
+#practice .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 900px) {
+  #practice .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  #practice .grid-3 { grid-template-columns: 1fr; }
+}
+
+#practice .card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+}
+#practice .card .pad { padding: 20px; }
+#practice .card h3 { font-size: 1.4rem; margin-bottom: 10px; }
+#practice .card .when { color: var(--muted); }

@@ -1,0 +1,66 @@
+/* awards.css */
+#awards .section {
+  margin-bottom: 40px;
+}
+#awards .section h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent);
+  padding-bottom: 8px;
+  text-align: left;
+  margin-bottom: 28px;
+}
+
+/* 关键：让 .grid 成为网格容器 */
+#awards .grid {
+  display: grid;
+  gap: 16px;
+}
+/* 三列 */
+#awards .grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+/* 响应式 */
+@media (max-width: 900px) {
+  #awards .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  #awards .grid-3 { grid-template-columns: 1fr; }
+}
+
+#awards .card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+#awards .card .pad { padding: 20px; }
+#awards .card h3 { font-size: 1.4rem; margin-bottom: 10px; }
+#awards .card .when { color: var(--muted); }
+
+/* 图片样式 */
+/* 当使用横向缩略图行（image-gallery）时 */
+#awards .card .image-gallery {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+}
+
+/* 每个缩略图的包裹容器，保证比例或高度一致 */
+#awards .card .thumb {
+  flex: 1 1 0;           /* 平分可用宽度 */
+  aspect-ratio: 1 / 1;   /* 方形缩略图（改成 16/9 或 4/3 也行） */
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+#awards .card .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+

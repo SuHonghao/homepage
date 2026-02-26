@@ -1,0 +1,62 @@
+/* education.css */
+/* 单列 + 左图右文 */
+#education .section { margin-bottom: 40px; }
+#education .section h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent);
+  padding-bottom: 8px;
+  text-align: left;
+  margin-bottom: 28px; 
+}
+
+/* 把 .grid 变成网格容器，并默认就是 1 列（即使你写了 grid-2 也会被覆盖到 1 列） */
+#education .grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
+/* 如果你在 HTML 用 grid-1，也提供对应类 */
+#education .grid-1 { grid-template-columns: 1fr; }
+/* 只修改对齐相关，不改变其他样式 */
+#education .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* 垂直居中 */
+  gap: 36px; /* 调整图片和文字之间的水平距离，可改成你想要的值 */
+  height: 180px;  
+}
+
+#education .card .pad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 文字垂直居中 */
+
+  /* 可选：单独加左边距，进一步控制间距 */
+  margin-left: 16px;
+}
+
+#education .card .image-container {
+  flex: 0 0 28%;
+  max-width: 28%;
+  overflow: hidden;
+  border-radius: var(--radius);
+  
+  /* 不改变图片原来的填充方式，所以不使用 flex 居中图片 */
+}
+
+#education .card .image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* 保持原来的填充方式 */
+}
+
+
+
+/* 小屏幕下保持卡片内容居中显示，但图片仍保持原来的填充方式 */
+@media (max-width: 640px) {
+  #education .card {
+    flex-direction: column;
+    align-items: center; /* 图片和文字水平居中 */
+  }
+  #education .card .pad {
+    align-items: center;
+    text-align: center;
+  }
+}
