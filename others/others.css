@@ -1,6 +1,6 @@
 /* others.css */
-#others .section { margin-bottom: 40px; }
-#others .section h2 {
+#others.section { margin-bottom: 40px; }
+#others.section h2 {
   font-size: 1.8rem;
   border-bottom: 2px solid var(--accent);
   color: var(--accent);

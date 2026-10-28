@@ -1,8 +1,8 @@
 /* awards.css */
-#awards .section {
+#awards.section {
   margin-bottom: 40px;
 }
-#awards .section h2 {
+#awards.section h2 {
   font-size: 1.8rem;
   border-bottom: 2px solid var(--accent);
   color: var(--accent);

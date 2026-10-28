@@ -39,3 +39,9 @@ body {
   margin: 0 auto;  /* 水平居中 */
   padding: 0 24px; /* 给容器添加内边距 */
 }
+
+.section { scroll-margin-top: 72px; }
+.card, .card .pad, .hero-meta { min-width: 0; overflow-wrap: anywhere; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

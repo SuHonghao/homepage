@@ -1,6 +1,6 @@
 /* projects.css */
-#projects .section { margin-bottom: 40px; }
-#projects .section h2 {
+#projects.section { margin-bottom: 40px; }
+#projects.section h2 {
   font-size: 1.8rem;
   border-bottom: 2px solid var(--accent);
   color: var(--accent);

@@ -1,21 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
 <meta charset="utf-8" />
+<base href="../" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>教育经历</title>
-<link rel="stylesheet" href="education.css" />
+<link rel="stylesheet" href="styles/base.css" />
+<link rel="stylesheet" href="styles/cards.css" />
+<link rel="stylesheet" href="styles/images.css" />
+<link rel="stylesheet" href="education/education.css" />
+<link rel="stylesheet" href="styles/responsive.css" />
+<link rel="stylesheet" href="styles/theme.css" />
 </head>
+<body>
+<main class="container">
 <section id="education" class="section">
-  <h2>教育经历</h2>
+  <h2 data-label="01 / EDUCATION">教育经历</h2>
   <div class="grid grid-1">
     <article class="card">
       <div class="image-container">
-        <img src="images/education/szu_logo.png" alt="深圳大学 计算机与软件学院 人工智能（腾班） 图片 1" />
+        <img loading="lazy" decoding="async" src="images/education/szu_logo.png" alt="深圳大学 · 计算机与软件学院 图片 1" />
       </div>
       <div class="pad">
-        <h3>深圳大学 计算机与软件学院 人工智能（腾班）</h3>
+        <h3>深圳大学 · 计算机与软件学院</h3>
         <p class="when">2024.09 - 至今</p>
-        <p>专业方向：具身智能<br>GPA：3.53/4.50</p>
+        <p>工科学士（在读） · 人工智能（腾班）<br>GPA：3.50/4.50 · 专业第 19 名</p>
       </div>
     </article>
   </div>
 </section>
+</main>
+<script src="script.js" defer></script>
+</body>
+</html>

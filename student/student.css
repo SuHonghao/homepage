@@ -1,6 +1,6 @@
 /* student.css */
-#student .section { margin-bottom: 40px; }
-#student .section h2 {
+#student.section { margin-bottom: 40px; }
+#student.section h2 {
   font-size: 1.8rem;
   border-bottom: 2px solid var(--accent);
   color: var(--accent);

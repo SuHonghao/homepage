@@ -1,7 +1,7 @@
 /* education.css */
 /* 单列 + 左图右文 */
-#education .section { margin-bottom: 40px; }
-#education .section h2 {
+#education.section { margin-bottom: 40px; }
+#education.section h2 {
   font-size: 1.8rem;
   border-bottom: 2px solid var(--accent);
   color: var(--accent);
@@ -20,7 +20,7 @@
   flex-direction: row;
   align-items: center; /* 垂直居中 */
   gap: 36px; /* 调整图片和文字之间的水平距离，可改成你想要的值 */
-  height: 180px;  
+  min-height: 180px;
 }
 
 #education .card .pad {
@@ -43,8 +43,8 @@
 
 #education .card .image-container img {
   width: 100%;
-  height: auto;
-  object-fit: cover; /* 保持原来的填充方式 */
+  height: 100%;
+  object-fit: contain; /* 保持原来的填充方式 */
 }
 
 
@@ -59,4 +59,10 @@
     align-items: center;
     text-align: center;
   }
+}
+
+@media (max-width: 640px) {
+  #education .card { gap: 16px; }
+  #education .card .image-container { flex: none; max-width: 100%; width: 100%; height: 140px; }
+  #education .card .pad { margin-left: 0; }
 }

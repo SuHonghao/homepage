@@ -1,97 +1,53 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // 模块名称和中文标题的映射
-  const moduleTitles = {
-    'education': '教育经历',
-    'awards': '竞赛获奖',
-    'projects': '项目经验',
-    'honors': '校级荣誉',
-    'others': '其他经历',
-    'student': '学生工作',
-    'practice': '社会实践'
-  };
-
-  // 读取模块列表并加载对应 HTML
-  const modules = [
-    'education',
-    'awards',
-    'projects',
-    'honors',
-    'others',
-    'student',
-    'practice'
-  ];
-
-  const navList = document.querySelector('.nav');
-  const wrapper = document.getElementById('modules-wrapper');
-
-  modules.forEach(moduleName => {
-    // 创建导航链接
-    const li = document.createElement('li');
-    const a = document.createElement('a');
-    a.href = `#${moduleName}`;
-    a.textContent = moduleTitles[moduleName] || moduleName;  // 如果没有映射，则使用英文名称
-    li.appendChild(a);
-    navList.appendChild(li);
-
-    // 创建容器并加载模块 HTML
-    const container = document.createElement('div');
-    container.id = moduleName;
-    container.className = 'section';
-    wrapper.appendChild(container);
-
-    // 动态加载对应模块的 HTML
-    fetch(`${moduleName}/${moduleName}.html`)
-      .then(response => response.text())
-      .then(html => {
-        container.innerHTML = html;
-        // 加载完模块 HTML 后，为其中的图片容器启用轮播效果
-        initImageGalleries(container);
-      })
-      .catch(err => {
-        console.warn(`未能加载模块 ${moduleName}:`, err);
-      });
-  });
-
-  // 初始化访问次数
-  const visits = parseInt(localStorage.getItem('visitCount') || '0', 10) + 1;
-  localStorage.setItem('visitCount', visits);
-  const visitCounterElement = document.getElementById('visit-count');
-  if (visitCounterElement) visitCounterElement.textContent = visits;
+  initImageGalleries(document);
+  const counter = document.getElementById('visit-count');
+  if (!counter) return;
+  // 隐私模式或禁用存储时，不影响页面其余功能。
+  try {
+    const previous = Number(localStorage.getItem('visitCount'));
+    const visits = (Number.isSafeInteger(previous) && previous >= 0 ? previous : 0) + 1;
+    localStorage.setItem('visitCount', String(visits));
+    counter.textContent = String(visits);
+  } catch {
+    counter.textContent = '不可用';
+  }
 });
 
-/**
- * 初始化一个父容器中的所有图片轮播。
- * @param {HTMLElement} scope - 包含图片容器的父节点
- */
 function initImageGalleries(scope) {
-  const galleries = scope.querySelectorAll('.image-container');
-  galleries.forEach(container => {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const stopGalleries = [];
+  scope.querySelectorAll('.image-container').forEach(container => {
     const images = Array.from(container.querySelectorAll('img'));
-    if (images.length <= 1) return; // 无需轮播
-
-    let current = 0; // 当前显示的图片
-    let intervalId; // 用于存储 interval 的 ID
-
-    // 更新图片显示
-    const updateGallery = () => {
-      images.forEach((img, i) => {
-        img.style.opacity = i === current ? '1' : '0';  // 控制图片的显示/隐藏
-      });
+    if (images.length <= 1) return;
+    let current = 0;
+    let intervalId = null;
+    const show = index => {
+      images[current].style.opacity = '0';
+      current = index;
+      images[current].style.opacity = '1';
     };
-
-    container.addEventListener('mouseenter', () => {
-      current = 1;
-      updateGallery();
-      intervalId = setInterval(() => {
-        current = (current + 1) % images.length;
-        updateGallery();
-      }, 1000);  // 每 1 秒切换一次图片
-    });
-
-    container.addEventListener('mouseleave', () => {
+    const stop = () => {
       clearInterval(intervalId);
-      current = 0;
-      updateGallery();
+      intervalId = null;
+      show(0);
+    };
+    const next = () => {
+      const index = (current + 1) % images.length;
+      // 图片未解码完成时保留当前图片，避免切换成白屏。
+      if (images[index].complete && images[index].naturalWidth > 0) show(index);
+    };
+    container.addEventListener('mouseenter', () => {
+      if (reducedMotion.matches || document.hidden || intervalId !== null) return;
+      next();
+      intervalId = setInterval(next, 2000);
     });
+    container.addEventListener('mouseleave', stop);
+    stopGalleries.push(stop);
   });
+  const stopAll = () => stopGalleries.forEach(stop => stop());
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stopAll();
+  });
+  window.addEventListener('pagehide', stopAll);
+  reducedMotion.addEventListener('change', stopAll);
 }

@@ -1,28 +1,26 @@
-/* 方案 A: 固定高度裁切（兼容） */
 .image-container {
   position: relative;
   width: 100%;
-  height: 200px;      /* 统一高度，按需调整 */
+  height: 200px;
+  flex-shrink: 0;
   overflow: hidden;
-  padding: 10px;      /* 保留你原有的内边距 */
-  box-sizing: border-box;
-  border-radius: 8px; /* 可选：圆角看着更整齐 */
+  border-radius: 8px;
 }
 
 .image-container img {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: auto;        /* 让图片按比例放大到覆盖容器 */
-  height: 100%;       /* 高度填充容器 */
-  transform: translate(-50%, -50%);
-  object-fit: cover;  /* 关键：居中裁切而不变形 */
-  transition: opacity 0.4s ease-in-out, transform 0.3s ease;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   display: block;
+  transition: opacity 0.4s ease-in-out;
 }
 
-/* 如果图片宽度不足以填满（长图/窄图），确保横向也覆盖 */
-.image-container img.landscape {
-  width: 100%;
-  height: auto;
+/* 无需等待脚本执行，首张图片即为默认显示的图片。 */
+.image-gallery img { opacity: 0; }
+.image-gallery img:first-child { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .image-container img { transition: none; }
 }

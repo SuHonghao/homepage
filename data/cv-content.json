@@ -1,0 +1,349 @@
+{
+  "education": [
+    {
+      "title": "深圳大学 · 计算机与软件学院",
+      "time": "2024.09 - 至今",
+      "descriptions": [
+        "工科学士（在读） · 人工智能（腾班）\nGPA：3.50/4.50 · 专业第 19 名"
+      ],
+      "images": [
+        "images/education/szu_logo.png"
+      ]
+    }
+  ],
+  "internship": [
+    {
+      "title": "Xspark AI · 算法实习生",
+      "time": "2026.02 - 至今",
+      "descriptions": [
+        "仿真与评测事业部\n负责仿真环境资产生成、数据生成管线等。"
+      ],
+      "images": [
+        "images/internship/xspark.png"
+      ],
+      "links": [
+        {
+          "label": "公司官网",
+          "url": "https://xsparkai.com/en/about"
+        }
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies",
+      "time": "",
+      "descriptions": [],
+      "images": [
+        "images/papers/robodojo.png"
+      ],
+      "role": "合作作者",
+      "links": [
+        {
+          "label": "论文",
+          "url": "https://arxiv.org/abs/2607.04434"
+        },
+        {
+          "label": "项目主页",
+          "url": "https://robodojo-benchmark.com/"
+        }
+      ]
+    },
+    {
+      "title": "ManiTwin: Scaling Data-Generation-Ready Digital Object Dataset to 100K",
+      "time": "IEEE IROS 2026 Workshop ScaleInfra · 接收",
+      "descriptions": [],
+      "images": [
+        "images/papers/manitwin.png"
+      ],
+      "role": "共同一作",
+      "links": [
+        {
+          "label": "论文",
+          "url": "https://arxiv.org/abs/2603.16866"
+        },
+        {
+          "label": "项目主页",
+          "url": "https://manitwin.github.io/"
+        }
+      ]
+    },
+    {
+      "title": "Towards Trustworthy Embodied Intelligence: A Systems Framework and Graded Trustworthiness Levels",
+      "time": "Advanced Intelligent Systems · 在投（JCR Q1）",
+      "descriptions": [],
+      "images": [
+        "images/papers/trustworthy.jpg"
+      ],
+      "role": "共同一作",
+      "links": [
+        {
+          "label": "论文",
+          "url": "https://arxiv.org/abs/2607.26121"
+        }
+      ]
+    },
+    {
+      "title": "XPolicyLab: A Unified Standard and Open Ecosystem for Robot Policy Evaluation and Deployment",
+      "time": "IEEE IROS 2026 Workshop ScaleInfra · 接收",
+      "descriptions": [],
+      "images": [
+        "images/papers/xpolicylab.png"
+      ],
+      "role": "合作作者",
+      "links": [
+        {
+          "label": "论文",
+          "url": "https://arxiv.org/abs/2608.09892"
+        },
+        {
+          "label": "项目主页",
+          "url": "https://xpolicylab.github.io/"
+        }
+      ]
+    },
+    {
+      "title": "Bench2Arena: Semantics-Preserving Agentic Compilation of Embodied Benchmarks into Isaac Lab-Arena",
+      "time": "IEEE IROS 2026 Workshop ScaleInfra · 接收",
+      "descriptions": [],
+      "images": [],
+      "role": "共同一作",
+      "links": [
+        {
+          "label": "OpenReview",
+          "url": "https://openreview.net/forum?id=wGKg4u42gR"
+        }
+      ]
+    },
+    {
+      "title": "RoboValue: A Fine-Grained Sim-and-Real Benchmark for Unified Evaluation of Robotic Value Models",
+      "time": "ICLR 2027 Conference · 在投",
+      "descriptions": [],
+      "images": [
+        "images/papers/robovalue.jpg"
+      ],
+      "role": "共同一作",
+      "links": [
+        {
+          "label": "论文",
+          "url": "https://arxiv.org/abs/2610.26663"
+        },
+        {
+          "label": "项目主页",
+          "url": "https://robovalue-benchmark.github.io/"
+        }
+      ]
+    },
+    {
+      "title": "WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations",
+      "time": "NeurIPS 2026 Workshop PhysWorldAI · 接收 / ICLR 2027 Conference · 在投",
+      "descriptions": [],
+      "images": [
+        "images/papers/worldmirror.png"
+      ],
+      "role": "共同一作",
+      "links": [
+        {
+          "label": "论文",
+          "url": "https://arxiv.org/abs/2610.31834"
+        },
+        {
+          "label": "项目主页",
+          "url": "https://worldmirror-page.github.io/"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "萌动智宠 - 基于深度学习的桌面级轮腿机器人",
+      "time": "2025.03 - 2025.10",
+      "descriptions": [
+        "带领 5 人团队，从 0 开始打造一款具备语言交互功能的桌面机器人。"
+      ],
+      "images": [
+        "images/projects/mdzc/mdzc_1.jpg",
+        "images/projects/mdzc/mdzc_0.jpg"
+      ]
+    },
+    {
+      "title": "显“鹅”易见 - 特色家禽智慧养殖",
+      "time": "2025.01 - 2025.10",
+      "descriptions": [
+        "项目第二负责人，使用 AI 技术辅助特色家禽养殖。"
+      ],
+      "images": [
+        "images/projects/xeyj/xeyj_1.jpg",
+        "images/projects/xeyj/xeyj_0.png"
+      ]
+    },
+    {
+      "title": "三生渡 - 侨批文化宣传游戏",
+      "time": "2026.07 - 2026.10",
+      "descriptions": [
+        "根据厦门华侨文化制作侨批主题的文游。"
+      ],
+      "images": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "“挑战杯”竞赛“人工智能+”专项赛",
+      "time": "2025.06",
+      "descriptions": [
+        "仿真赛全国冠军"
+      ],
+      "images": [
+        "images/award/tzb/tzb_1.jpg"
+      ]
+    },
+    {
+      "title": "“挑战杯”竞赛“人工智能+”专项赛",
+      "time": "2025.11",
+      "descriptions": [
+        "真机赛全国三等奖"
+      ],
+      "images": [
+        "images/award/tzb/tzb_0.jpg"
+      ]
+    },
+    {
+      "title": "中国国际大学生创新大赛",
+      "time": "2025.08",
+      "descriptions": [
+        "广东省金奖"
+      ],
+      "images": [
+        "images/award/gcs/gcs_1.jpg",
+        "images/award/gcs/gcs_2.jpg"
+      ]
+    },
+    {
+      "title": "中国大学生计算机设计大赛",
+      "time": "2025.08",
+      "descriptions": [
+        "全国二等奖"
+      ],
+      "images": [
+        "images/award/js/js_1.jpg",
+        "images/award/js/js_0.jpg"
+      ]
+    },
+    {
+      "title": "中国高校智能机器人创意大赛",
+      "time": "2025.08",
+      "descriptions": [
+        "全国二等奖"
+      ],
+      "images": [
+        "images/award/jc/jc_1.jpg",
+        "images/award/jc/jc_0.jpg"
+      ]
+    },
+    {
+      "title": "iCAN 大学生创新创业大赛",
+      "time": "2025.11",
+      "descriptions": [
+        "大湾区赛区二等奖"
+      ],
+      "images": [
+        "images/award/ican/ican_1.jpg",
+        "images/award/ican/ican_0.jpg"
+      ]
+    }
+  ],
+  "student": [
+    {
+      "title": "深圳大学青年责任与领导力发展中心 · 干事",
+      "time": "2024.09 - 2025.09",
+      "descriptions": [
+        "参与策划“青马先锋团”等活动，总参与人数超 2000 人。"
+      ],
+      "images": []
+    },
+    {
+      "title": "深圳大学 2024 级人工智能腾班 · 团支部书记",
+      "time": "2024.09 - 至今",
+      "descriptions": [
+        "组织统筹班级 36 人的团务相关事务。"
+      ],
+      "images": []
+    }
+  ],
+  "practice": [
+    {
+      "title": "广东省百千万工程项目",
+      "time": "2025.06",
+      "descriptions": [
+        "深入广东省汕尾陆丰市，调研老水鸡养殖情况。"
+      ],
+      "images": []
+    },
+    {
+      "title": "深圳大学“X计划”调研团",
+      "time": "2025.08 - 至今",
+      "descriptions": [
+        "深入安徽省广德市、福建省厦门开展竹产业相关调研活动。"
+      ],
+      "images": []
+    },
+    {
+      "title": "志愿服务活动",
+      "time": "2024.09 - 至今",
+      "descriptions": [
+        "2024 年至今累计义工时 690 小时，包括十五运会等多项活动。"
+      ],
+      "images": []
+    }
+  ],
+  "others": [
+    {
+      "title": "深圳大学院士创新领航训练营",
+      "time": "2025.07 - 至今",
+      "descriptions": [
+        "跟随李清泉院士团队推动具身智能领域落地应用。"
+      ],
+      "images": []
+    },
+    {
+      "title": "大学生创新创业训练计划",
+      "time": "2025.03 - 至今",
+      "descriptions": [
+        "国家级项目立项，优秀结项。"
+      ],
+      "images": []
+    },
+    {
+      "title": "深圳大学“3+10荔园团支书成长计划”",
+      "time": "2025.03 - 2025.06",
+      "descriptions": [
+        "校团委老师开展 1 对 1 线下技能培训。"
+      ],
+      "images": []
+    },
+    {
+      "title": "深圳大学计算机与软件学院 2025 级新生导生",
+      "time": "2025.09 - 2026.06",
+      "descriptions": [
+        "带领 3 名卓越班新生进行学业适应工作和个人生涯规划。"
+      ],
+      "images": []
+    },
+    {
+      "title": "腾讯云 Tedu 校园推广大使",
+      "time": "2025.08 - 2026.06",
+      "descriptions": [
+        "负责辅助相关活动的宣发和开展。"
+      ],
+      "images": []
+    },
+    {
+      "title": "深圳大学“青马先锋团”系列活动",
+      "time": "2024.09 - 2026.03",
+      "descriptions": [
+        "参与“新生营”“筑基营”“筑梦营”并顺利结营。"
+      ],
+      "images": []
+    }
+  ]
+}

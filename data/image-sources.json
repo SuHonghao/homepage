@@ -1,0 +1,41 @@
+{
+  "xspark": {
+    "source": "https://xsparkai.com/en/about",
+    "image": "https://xsparkai.com/assets/pages/home/brand/hero-wordmark.png",
+    "local_path": "images/internship/xspark.png"
+  },
+  "robodojo": {
+    "source": "https://robodojo-benchmark.com/",
+    "image": "https://media.luminis-sim.com/media/home/teaser-2x.png",
+    "local_path": "images/papers/robodojo.png"
+  },
+  "manitwin": {
+    "source": "https://arxiv.org/html/2603.16866v1",
+    "image": "https://arxiv.org/html/2603.16866v1/manitwin-teaser.png",
+    "local_path": "images/papers/manitwin.png"
+  },
+  "trustworthy": {
+    "source": "https://tianxingchen.github.io/",
+    "image": "https://tianxingchen.github.io/assets/files/work/2026-trustworthy-survey.jpg",
+    "local_path": "images/papers/trustworthy.jpg"
+  },
+  "xpolicylab": {
+    "source": "https://xpolicylab.github.io/",
+    "image": "https://xpolicylab.github.io/assets/teaser.png",
+    "local_path": "images/papers/xpolicylab.png"
+  },
+  "worldmirror": {
+    "source": "https://arxiv.org/html/2610.31834v1",
+    "image": "https://arxiv.org/html/2610.31834v1/teaser-pdf.png",
+    "local_path": "images/papers/worldmirror.png"
+  },
+  "robovalue": {
+    "source": "https://robovalue-benchmark.github.io/",
+    "image": "https://robovalue-benchmark.github.io/assets/overview-10-16.svg",
+    "local_path": "images/papers/robovalue.jpg"
+  },
+  "bench2arena": {
+    "source": "https://openreview.net/forum?id=wGKg4u42gR",
+    "image": null
+  }
+}

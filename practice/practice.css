@@ -1,6 +1,6 @@
 /* practice.css */
-#practice .section { margin-bottom: 40px; }
-#practice .section h2 {
+#practice.section { margin-bottom: 40px; }
+#practice.section h2 {
   font-size: 1.8rem;
   border-bottom: 2px solid var(--accent);
   color: var(--accent);
