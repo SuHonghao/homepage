@@ -36,6 +36,12 @@
   },
   "bench2arena": {
     "source": "https://openreview.net/forum?id=wGKg4u42gR",
-    "image": null
+    "image": null,
+    "local_path": "images/papers/bench2arena.png",
+    "provided_source": "26_Bench2Arena_Semantics_Prese.pdf, page 2, Figure 1"
+  },
+  "sanshengdu": {
+    "source": "用户提供的三生渡项目图片",
+    "local_path": "images/projects/sanshengdu/sanshengdu.jpg"
   }
 }

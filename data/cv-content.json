@@ -33,7 +33,9 @@
     {
       "title": "RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies",
       "time": "",
-      "descriptions": [],
+      "descriptions": [
+        "核心工作"
+      ],
       "images": [
         "images/papers/robodojo.png"
       ],
@@ -106,7 +108,9 @@
       "title": "Bench2Arena: Semantics-Preserving Agentic Compilation of Embodied Benchmarks into Isaac Lab-Arena",
       "time": "IEEE IROS 2026 Workshop ScaleInfra · 接收",
       "descriptions": [],
-      "images": [],
+      "images": [
+        "images/papers/bench2arena.png"
+      ],
       "role": "共同一作",
       "links": [
         {
@@ -183,7 +187,9 @@
       "descriptions": [
         "根据厦门华侨文化制作侨批主题的文游。"
       ],
-      "images": []
+      "images": [
+        "images/projects/sanshengdu/sanshengdu.jpg"
+      ]
     }
   ],
   "awards": [
